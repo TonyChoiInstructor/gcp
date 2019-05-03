@@ -2,3 +2,5 @@
 yum -y install httpd
 systemctl start httpd
 systemctl enable httpd.service
+cat <<EOF > /var/www/html/index.html
+<html><body><h1>Web Server-01</h1>
