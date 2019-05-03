@@ -1,0 +1,20 @@
+
+AWS전문가를 위한 GCP문서 : https://cloud.google.com/docs/compare/aws/
+
+GCP 네트워크 문서 : https://cloud.google.com/vpc/
+
+  1. Legacy Network 만들기
+      gcloud compute networks create tony-legacy-network --subnet-mode legacy --range 192.168.0.0/16
+    
+  2. Subnet Network 만들기
+      gcloud compute networks subnets create tony-network --network=tony-subnet-01 --range=192.168.1.0/24 --region=asia-northeast1-a
+    
+  3. ssh 접속
+      gcloud compute ssh web-01 --zone asia-northeast1-a
+      
+  4. 인증 계정 확인
+      gcloud auth list
+  
+  5. 
+ 
+ 
