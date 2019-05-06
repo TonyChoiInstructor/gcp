@@ -1,8 +1,11 @@
 https://cloud.google.com/compute/docs/tutorials?hl=ko
 
 
-1. GCP 둘러보기 (무료)
+0. GCP 둘러보기 (무료)
     https://www.qwiklabs.com/focuses/2794?parent=catalog
+    
+1. GCP Fundamentals: Getting Started with Cloud Marketplace (무료) - Linux+Apache+MySQL+PHP
+    https://googlecoursera.qwiklabs.com/focuses/17382?locale=en
     
 2. 가상 머신 만들기 (1 Credit) - 리눅스 + NGINX + gcloud shell
     https://www.qwiklabs.com/focuses/3563?parent=catalog
