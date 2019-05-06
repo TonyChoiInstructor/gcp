@@ -3,43 +3,57 @@ https://cloud.google.com/compute/docs/tutorials?hl=ko
 
 0. GCP 둘러보기 (무료)
     https://www.qwiklabs.com/focuses/2794?parent=catalog
+    http://bit.ly/2DT4B1P
     
 1. GCP Fundamentals: Getting Started with Cloud Marketplace (무료) - Linux+Apache+MySQL+PHP
     https://googlecoursera.qwiklabs.com/focuses/17382?locale=en
+    http://bit.ly/2H4gUtZ
     
 2. 가상 머신 만들기 (1 Credit) - 리눅스 + NGINX + gcloud shell
     https://www.qwiklabs.com/focuses/3563?parent=catalog
+    http://bit.ly/2H4eziM
     
 3. 가상 머신 만들기 (1 Credit) - 윈도우2012R2 서버
     https://www.qwiklabs.com/focuses/560?parent=catalog
+    http://bit.ly/2JkMhC8
     
 4. VPC Networking Fundamentals (5 Credit) - VPC + 2VMs
     https://www.qwiklabs.com/focuses/1229?parent=catalog
+    http://bit.ly/2GZGnDK
     
 5. Cloud SQL for MySQL (1 Credit) - CloudSQL
     https://www.qwiklabs.com/focuses/936?parent=catalog
-    
+    http://bit.ly/2HdPLE7
+        
 6. Cloud Storage - Console (1 Credit) - Cloud Storage
     https://www.qwiklabs.com/focuses/1760?catalog_rank=%7B%22rank%22%3A173%2C%22num_filters%22%3A1%2C%22has_search%22%3Afalse%7D&parent=catalog
+    http://bit.ly/2J4IBoI
     
 7. Docker 소개 (1 Credit)
     https://www.qwiklabs.com/focuses/1029?catalog_rank=%7B%22rank%22%3A17%2C%22num_filters%22%3A2%2C%22has_search%22%3Afalse%7D&parent=catalog
+    http://bit.ly/2Jko9zJ
     
 8. App Engine - Python (1 Credit)
     https://www.qwiklabs.com/focuses/1014?catalog_rank=%7B%22rank%22%3A25%2C%22num_filters%22%3A2%2C%22has_search%22%3Afalse%7D&parent=catalog
+    http://bit.ly/3097EMW
     
 9. Cloud IAM (1 Credit)
     https://www.qwiklabs.com/focuses/551?catalog_rank=%7B%22rank%22%3A50%2C%22num_filters%22%3A2%2C%22has_search%22%3Afalse%7D&parent=catalog
+    http://bit.ly/2WqayKZ
     
 10.Cloud Filestore (1 Credit)
     https://www.qwiklabs.com/focuses/1802?catalog_rank=%7B%22rank%22%3A53%2C%22num_filters%22%3A2%2C%22has_search%22%3Afalse%7D&parent=catalog
+    http://bit.ly/2LsMXbl
     
 11. Stackdriver (1 Credit)
     https://www.qwiklabs.com/focuses/858?parent=catalog
+    http://bit.ly/2VQZBEU
     
 12. 네트워크 및 HTTP 부하 분산기 설정하기(5 Credit)
     https://www.qwiklabs.com/focuses/558?catalog_rank=%7B%22rank%22%3A69%2C%22num_filters%22%3A2%2C%22has_search%22%3Afalse%7D&parent=catalog
+    http://bit.ly/2H5DFMT
 
 13. Kubernetes Engine (1 Credit)
     https://www.qwiklabs.com/focuses/878?parent=catalog
+    http://bit.ly/2vFGpvt
 
