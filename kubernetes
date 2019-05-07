@@ -18,3 +18,9 @@ kubectl get pods
 
 kubectl get services
 
+
+
+kubectl run tony-web --image=httpd:latest
+kubectl get pods
+kubectl expose deployment tony-web --port 80 --type LoadBalancer
+
