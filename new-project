@@ -1,0 +1,24 @@
+
+1. 신규 프로젝트 생성
+
+2. 신규 Legacy Network 생성 (192.168.0.0/16)
+
+3. 서로 다른 3개의 리전에 각각 Windows와 Linux 가상 머신 각각 1대씩 생성
+  - 각 리전별 가상 머신 2대 - Windows 2016 VM, Linux Centos7 VM)
+  - Linux VM 들은 동일한 공개 키로 생성하여, 하나의 사설 키로 접속이 가능하도록 구성.
+  - Linux VM 은 웹서버 설치 할 것.
+  - Windows VM 은 모두 동일한 ID와 패스워드로 구성한다.
+  - Windows VM 은 한글로 메뉴가 보이도록 구성하며, 한국 시간으로 보이도록 구성.
+
+4. 방화벽 설정
+  - Windows 가상 머신끼리 통신하여야 하고, Linux 가상 머신 간에만 통신이 되어야 함.
+  - 단, Windows 가상 머신과 Linux 가상 머신간에는 서로 Ping으로 확인이 가능해야 함.
+
+5. 영구 디스크 추가
+  - Windows 가상 머신에는 100GB 디스크를 추가하여, D 드라이브로 인식 시킨다.
+  
+6. LoadBalancer
+  - 각 리전에 위치한 Linux 가상 머신들을 TCP LoadBalancer로 부하 분산 시킨다.
+  - LoadBalancer 는 고정 공인 IP를 할당 한다.
+
+7. 
