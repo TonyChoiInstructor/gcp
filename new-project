@@ -21,4 +21,22 @@
   - 각 리전에 위치한 Linux 가상 머신들을 TCP LoadBalancer로 부하 분산 시킨다.
   - LoadBalancer 는 고정 공인 IP를 할당 한다.
 
-7. 
+7. Container 기반의 OS 프로비저닝
+  - 컨테이너 기반의 VM 생성
+  - httpd:latest 이미지 받아서 웹서버 구동
+      # docker pull httpd:latest
+      # docker images
+      # docker run -itd web-01 -p 80:80 --name httpd:latest
+      # docker ps -au
+      # touch index.html
+      # vi index.html
+      # docker cp index.html web-01:/usr/local/apache2/htdocs/index.html
+      # docker commit -a "Made by Tony" <dockerid> tony-web-server/latest
+      # docker images
+      # docker rm -f $(docker ps -aq)
+      # docker run -itd --name web-01 -p 80:80 tony-web-server
+      # docker run -itd --name web-02 -p 8080:80 tony-web-server
+      
+      # docker exec -it web-01 bash
+      #    cd /usr/local/apache2/htdocs/index.html
+      
