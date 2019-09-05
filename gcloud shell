@@ -3,6 +3,9 @@ AWS전문가를 위한 GCP문서 : https://cloud.google.com/docs/compare/aws/
 
 GCP 네트워크 문서 : https://cloud.google.com/vpc/
 
+gcloud shell 문서 : https://cloud.google.com/sdk/gcloud/reference/compute/
+
+
   1. Legacy Network 만들기
       gcloud compute networks create tony-legacy-network --subnet-mode legacy --range 192.168.0.0/16
     
@@ -12,20 +15,26 @@ GCP 네트워크 문서 : https://cloud.google.com/vpc/
   3. ssh 접속
       gcloud compute ssh web-01 --zone asia-northeast1-a
       
-  4. 인증 계정 확인
+  4. 토니가
       gcloud auth list
   
   
       gcloud auth list
       gcloud config list project
+      
+      gcloud projects create tony-project-id --name="Tony Project"
+      gcloud config list project
+      gcloud config set project <project_id>
+      gcloud config set compute/zone asia-east1-b
+      
       gcloud compute instances create tony-vm-01 --zone us-central1-c
       gcloud compute ssh tony-vm-01 --zone us-central1-c
       
-      gcloud config set projet <project_id>
       
-  
-  01. VM 만들기
-      gcloud compute instances create tony-vm-01 --zone us-central1-c
-      
+      gcloud compute disks create mydisk --size=200GB --zone us-central1-c
+      gcloud compute instances attach-disk tony-vm-01 --disk mydisk --zone us-central1-c 
+     
+      gcloud projects delete <project_id>
+
  
  
