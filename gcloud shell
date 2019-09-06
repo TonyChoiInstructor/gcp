@@ -19,13 +19,14 @@ gcloud shell 문서 : https://cloud.google.com/sdk/gcloud/reference/compute/
       gcloud auth list
   
   
-      gcloud auth list
-      gcloud config list project
+      gcloud auth list   (현재 설정된 계정 확인)
+      gcloud projects list   (프로젝트 리스트 확인)
+      gcloud config list project    (현재 설정된 프로젝트 확인)
       
-      gcloud projects create tony-project-id --name="Tony Project"
-      gcloud config list project
-      gcloud config set project <project_id>
-      gcloud config set compute/zone asia-east1-b
+      gcloud projects create tony-project-id --name="Tony Project"    (프로젝트 생성)
+      gcloud config list project  
+      gcloud config set project <project_id>    (프로젝트 사용하겠다는 선언)
+      gcloud config set compute/zone asia-east1-b     (Default 생성 될 Zone 설정)
       
       gcloud compute instances create tony-vm-01 --zone us-central1-c
       gcloud compute ssh tony-vm-01 --zone us-central1-c
