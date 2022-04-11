@@ -25,6 +25,7 @@ OS 로그인
       lsblk : 연결된 디스크 확인
       file -s /dev/sda2 : 파일시스템 확인
       mkfs.ext4 -F -E lazy_itable_init=0,discard /dev/sdb   (inode table 초기화만 지연해라... Trim도 해라)
+         참고 사이트 - https://lunatine.net/2019/01/29/improve-ext4-format-speed/
       mkdir /tony-disk-01
       mount -o discard,defaults /dev/sdb /tony-disk-01
       df -Th : 용량 확인
