@@ -58,5 +58,12 @@ OS 로그인
       https://gongjak.me/2016/08/15/gcp-tip-metadata-of-instance/
       
   6. Cloud FileStore (File Storage) 만들기
+      yum -y install nfs-utils
+      mkdir /tony-nfs-storage
+      mount 10.23.154.114:/tonystorage /tony-nfs-storage
+      
+      윈도우에서도 nfs client 설치 후 마운트 가능함
+      
+  7. 
   
       
