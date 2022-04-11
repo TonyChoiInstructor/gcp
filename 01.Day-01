@@ -42,5 +42,19 @@ OS 로그인
       가상 머신 인스턴스 수정에서 옵션 수정해 줘야 함. (가상 머신 끄고 해야함)
       디스플레이 기기 사용 설정을 선택해 줘야 스크린샷 확인 가능.
       
-  4. 
+  4. 웹서버 설치하기
+      yum -y install httpd
+      systemctl start httpd
+      systemctl enable httpd
+      
+      GCP 방화벽에서 80 포트 열어주기 (그래도 웹서버로 접속이 안될 것임 --> 리눅스 방화벽이 있음)
+      
+      리눅스 방화벽 확인
+      systemctl status firewalld
+      https://wlsvud84.tistory.com/17
+      
+  5. 메타데이터 확인
+      https://gongjak.me/2016/08/15/gcp-tip-metadata-of-instance/
+      
+    
       
