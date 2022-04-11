@@ -32,6 +32,10 @@ OS 로그인
     
     - fstab 설정  
       /etc/fstab
-      UUID=85f8e0f6-c573-48d5-9f20-056ac527f227       /tony-disk-01   ext4    defaults        1 1
+      UUID=85f8e0f6-c573-48d5-9f20-056ac527f227       /tony-disk-01   ext4    defaults        0 2
+      
+      백업 동작 (Backup Operation): 0은 백업하지 않음. 1은 dump로 backup을 할지를 결정. 오래된 backup 방법이라서 0으로 설정해서 사용하지 않도록 한다.
+      파일 시스템 체크 순서 (File System Check Order): 0은 fsck로 체크하지 않음. 1은 root file system, 다른 파티션들은 2로 설정되어야 한다. 
+      3, 4, … 로 한다고 해서 순서가 되지 않으므로 순서를 설정하지 않도록 한다. 그냥 다른 모든 파티션은 2이다.
       
       
