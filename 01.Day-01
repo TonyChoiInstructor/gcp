@@ -62,7 +62,20 @@ OS 로그인
       mkdir /tony-nfs-storage
       mount 10.23.154.114:/tonystorage /tony-nfs-storage
       
-      윈도우에서도 nfs client 설치 후 마운트 가능함
+      윈도우에서도 nfs client 설치 후 마운트 가능함 (https://cloud.google.com/filestore/docs/mounting-fileshares?hl=ko#windows)
+      서버 관리자에서 NFS Client를 설치하던가 
+      파워쉘로 관리자 권한으로 열어서 
+      Install-WindowsFeature -Name NFS-Client        명령어 사용해서 설치
+      
+      파워쉘에서 (AnonymousUid 및 AnonymousGid를 만듦)
+      New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default" -Name "AnonymousUid" -Value "0" -PropertyType DWORD
+      New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default" -Name "AnonymousGid" -Value "0" -PropertyType DWORD
+      nfsadmin client stop
+      nfsadmin client start
+      
+      도스창에서  (z: 드라이브로 마운트)
+      mount 10.23.154.114:/tonystorage z:
+      umount z:
       
   7. 
   
