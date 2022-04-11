@@ -8,5 +8,17 @@ GCP 소개
 OS 로그인
   https://cloud.google.com/compute/docs/instances/managing-instance-access
   
+
   
-  
+1. GCP 소개
+
+2. Compute Engine
+    - 리눅스 VM 만들고 접속하기 (브라우저 접속)
+    - 윈도우 VM 만들고 접속하기 (RDP --> 패스워드 생성 필요)
+    - 접속 후 기본 설정 확인 (IP 확인, Date로 날짜 시간 확인, Timezone 확인, NTP 설정 확인등)
+    - 기본 설정하기 (Timezone 설정, NTP 서버 설정, 한글 언어팩 설정, 패스워드 설정등)
+    - NTP 서버는 GCP의 경우 169.254.169.254 (metadata.google.internal) 이고, AWS는 169.254.169.123 임
+
+3. Disk
+    - Persistent Disk (영구 디스크) & Local SSD (임시 디스크)
+    
