@@ -77,6 +77,12 @@ OS 로그인
       mount 10.23.154.114:/tonystorage z:
       umount z:
       
+      fstab에 부팅시 마다 마운트 될 수 있도록 설정
+      https://cloud.google.com/filestore/docs/mounting-fileshares#linux:-etcfstab
+      vi /etc/fstab
+      10.0.0.2:/tonystorage /tony-nfs-storage nfs defaults,_netdev 0 0
+      mount -a
+      
   7. 
   
       
