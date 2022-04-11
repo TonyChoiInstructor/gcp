@@ -21,4 +21,17 @@ OS 로그인
 
 3. Disk
     - Persistent Disk (영구 디스크) & Local SSD (임시 디스크)
+    - Disk 관련 명령어
+      lsblk : 연결된 디스크 확인
+      file -s /dev/sda2 : 파일시스템 확인
+      mkfs.ext4 -F -E lazy_itable_init=0,lazy_journal_init=0,discard /dev/sdb
+      mkdir /tony-disk-01
+      mount -o discard,defaults /dev/sdb /tony-disk-01
+      df -Th : 용량 확인
+      blkid : 디스크의 UUID 확인 명령어
     
+    - fstab 설정  
+      /etc/fstab
+      UUID=85f8e0f6-c573-48d5-9f20-056ac527f227       /tony-disk-01   ext4    defaults        1 1
+      
+      
