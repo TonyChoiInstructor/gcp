@@ -56,8 +56,12 @@ OS 로그인
       
   5. 메타데이터 확인
       https://gongjak.me/2016/08/15/gcp-tip-metadata-of-instance/
-      
-  6. Cloud FileStore (File Storage) 만들기
+  
+  6. Snapshot
+      스냅샷 스켸쥴링 만들고 Disk 연결해 보기
+      스냅샷 바로 만들기 (백업) --> 디스크 만들어 복원해 보기
+  
+  7. Cloud FileStore (File Storage) 만들기
       yum -y install nfs-utils
       mkdir /tony-nfs-storage
       mount 10.23.154.114:/tonystorage /tony-nfs-storage
@@ -83,14 +87,16 @@ OS 로그인
       10.0.0.2:/tonystorage /tony-nfs-storage nfs defaults,_netdev 0 0
       mount -a
       
-  7. Object Storage
+  8.Instance Template 
+      
+  9. Object Storage
   
-  8. IAM
+  10. IAM
   
-  9. VPC
+  11. VPC
   
-  10. Kubernetes
+  12. Kubernetes
   
-  11. Pub/Sub
+  13. Pub/Sub
   
       
