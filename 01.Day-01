@@ -120,9 +120,17 @@ OS 로그인
   
   12. VPC
   
-  13. Kubernetes
   
-  14. Pub/Sub
+  CLI 명령어 및 SDK
+  
+  13. gcloud
+  
+  14. gsutil
+  
+  
+  15. Kubernetes
+  
+  16. Pub/Sub
       https://webhook.site/
       
       
