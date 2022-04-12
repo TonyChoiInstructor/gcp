@@ -103,6 +103,8 @@ OS 로그인
       
       이제 새 인스턴스 만들 때, 템플릿으로 부터 가상 머신을 생성한다.
       
+      echo "Tony Web Server $(hostname) $(hostname -I)" > /var/www/html/index.html
+      
   9. Object Storage
   
   10. IAM
