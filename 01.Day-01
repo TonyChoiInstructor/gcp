@@ -88,6 +88,19 @@ OS 로그인
       mount -a
       
   8.Instance Template 
+      - 템플릿은 스냅샷으로 만들 수 없고, 일반 이미지나 Custom 이미지에서 선택할 수 있음 (따라서 미리 Custom Image를 만들어 두어야 함)
+      - 템플릿 만들 때 Startup Script 에서 부팅시 진행할 작업들을 넣으면 된다.
+      #!/bin/bash
+      yum -y install httpd
+      ifconfig eth0 | grep "inet " | awk -F'[: ]+' '{ print $3 }' > /var/www/html/index.html
+      echo "<h1> Tony's Web Server </h1>" >> /var/www/html/index.html
+      systemctl start httpd
+      systemctl enable httpd
+      
+      yum -y install wget
+      cd /var/www/html
+      wget -O index.html https://raw.githubusercontent.com/TonyChoiInstructor/aws/master/web-01.html
+      
       
   9. Object Storage
   
