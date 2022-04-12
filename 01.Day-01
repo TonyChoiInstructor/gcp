@@ -105,14 +105,19 @@ OS 로그인
       
       echo "Tony Web Server $(hostname) $(hostname -I)" > /var/www/html/index.html
       
-  9. Object Storage
+   
+   9. Instance Group
+   
+   
+
+  10. Object Storage
   
-  10. IAM
+  11. IAM
   
-  11. VPC
+  12. VPC
   
-  12. Kubernetes
+  13. Kubernetes
   
-  13. Pub/Sub
+  14. Pub/Sub
   
       
