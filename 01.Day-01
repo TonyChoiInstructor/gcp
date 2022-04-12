@@ -101,6 +101,7 @@ OS 로그인
       cd /var/www/html
       wget -O index.html https://raw.githubusercontent.com/TonyChoiInstructor/aws/master/web-01.html
       
+      이제 새 인스턴스 만들 때, 템플릿으로 부터 가상 머신을 생성한다.
       
   9. Object Storage
   
