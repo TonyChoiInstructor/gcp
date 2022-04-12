@@ -18,7 +18,7 @@ gcloud config list
 
 gcloud compute instances create tony-vm-01 --project=tony-korea-project --zone=asia-northeast3-a --machine-type=e2-small --network-interface=network-tier=PREMIUM,subnet=tony-subnet-01 --maintenance-policy=MIGRATE --no-service-account --no-scopes --create-disk=auto-delete=yes,boot=yes,device-name=tony-vm-01,image=projects/centos-cloud/global/images/centos-7-v20220406,mode=rw,size=20,type=projects/tony-korea-project/zones/asia-northeast3-a/diskTypes/pd-balanced --no-shielded-secure-boot --shielded-vtpm --shielded-integrity-monitoring --reservation-affinity=any
 
-
+gcloud compute instances create tony-vm-02 --machine-type=e2-small --zone=asia-northeast3-a  --image=centos-7-v20220406
 
 
 
