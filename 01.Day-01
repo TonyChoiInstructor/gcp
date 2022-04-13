@@ -97,8 +97,6 @@ OS 로그인
   
       yum -y install wget
       wget https://raw.githubusercontent.com/TonyChoiInstructor/gcp/master/index.html
-
-      wget https://github.com/TonyChoiInstructor/gcp/raw/master/index.html -O /var/www/html/index.html     (-O를 사용해서 덮어쓰기)
       
   또는
       #!/bin/bash
