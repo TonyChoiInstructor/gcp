@@ -98,6 +98,8 @@ OS 로그인
       yum -y install wget
       wget https://raw.githubusercontent.com/TonyChoiInstructor/gcp/master/index.html
       
+      wget -O https://raw.githubusercontent.com/TonyChoiInstructor/gcp/master/index.html   (기존 파일 덮어쓰기 옵션 -O)
+      
   또는
       #!/bin/bash
       yum -y install wget
