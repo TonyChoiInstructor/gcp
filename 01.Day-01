@@ -93,6 +93,8 @@ OS 로그인
       10.0.0.2:/tonystorage /tony-nfs-storage nfs defaults,_netdev 0 0
       mount -a
       
+  시작 스크립트 관련 문서 (https://cloud.google.com/compute/docs/instances/startup-scripts/linux)
+      
   8.Instance Template 
       - 템플릿은 스냅샷으로 만들 수 없고, 일반 이미지나 Custom 이미지에서 선택할 수 있음 (따라서 미리 Custom Image를 만들어 두어야 함)
       - 템플릿 만들 때 Startup Script 에서 부팅시 진행할 작업들을 넣으면 된다.
