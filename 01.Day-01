@@ -103,11 +103,11 @@ OS 로그인
       yum -y install wget
       yum -y install unzip
       yum install -y httpd
-      wget -P /var/www/html/ https://s3.ap-northeast-2.amazonaws.com/s3.tony-lab.net/Folio.zip
+      wget -P /var/www/html/ https://github.com/TonyChoiInstructor/gcp/raw/master/tony-web-follio.zip
       unzip /var/www/html/Folio.zip -d /var/www/html/
       systemctl start httpd
       systemctl enable httpd
-  
+
       
   8.Instance Template 
       - 템플릿은 스냅샷으로 만들 수 없고, 일반 이미지나 Custom 이미지에서 선택할 수 있음 (따라서 미리 Custom Image를 만들어 두어야 함)
