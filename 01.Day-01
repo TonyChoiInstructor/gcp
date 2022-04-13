@@ -56,6 +56,12 @@ OS 로그인
       
   5. 메타데이터 확인
       https://gongjak.me/2016/08/15/gcp-tip-metadata-of-instance/
+      
+      리눅스에서 메타데이터 확인
+      curl http://metadata.google.internal/computeMetadata/v1/instance/ -H "Metadata-Flavor: Google"
+      
+      리눅스에서 공인 IP 메타데이터 확인하는 
+      curl http://metadata.google.internal/computeMetadata/v1/instance/network-interfaces/0/access-configs/0/external-ip -H "Metadata-Flavor: Google"
   
   6. Snapshot
       스냅샷 스켸쥴링 만들고 Disk 연결해 보기
