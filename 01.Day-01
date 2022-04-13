@@ -138,9 +138,13 @@ OS 로그인
   
   11. Cloud Storage
   
-  11. IAM
-  
   12. VPC
+  
+  13. Firewall
+  
+  14. NAT
+  
+  15. IAM
   
   
   CLI 명령어 및 SDK
