@@ -1,5 +1,8 @@
 
 
+https://cloud.google.com/sdk/gcloud/reference
+
+
 gcloud config list
 
 gcloud compute regions list
@@ -27,3 +30,74 @@ gcloud config configurations create [NAME]
 gcloud config configurations activate [NAME]
 gcloud config configurations list 
 
+=====================================
+
+
+https://cloud.google.com/sdk/gcloud/reference 
+
+
+프로젝트를 확인하고 전환하는 것
+
+gcloud projects list	프로젝트 보기
+
+gcloud config set project	프로젝트 전환하기
+
+설정 보기 또는 설정해두기
+
+gcloud config list
+
+gcloud init	설정 초기화
+
+gcloud config list  설정값 보기
+
+gcloud config configurations list	현재 config true 인값 보기
+
+gcloud config configurations activate [NAME]   현재 config 설정 바꾸기
+
+gcloud config configurations create tony-config 	새로운 config 만들기
+
+gcloud config configurations activate tony-config	tony-config 로 사용하기
+
+
+
+gcloud config list compute/region
+
+gcloud config set compute/region asia-northeast3
+
+gcloud config set project tony-project
+
+
+인스턴스 생성
+
+gcloud compute instances list	인스턴스 목록 보기
+
+gcloud compute instances create [NAME] [--OPTIONS] 
+
+gcloud compute images list 
+
+gcloud compute zones list
+
+gcloud compute machine-type list
+
+gcloud compute instances create tony-vm-01 --machine-type=e2-small --image=centos-7-v20220406
+
+gcloud compute instances create tony-vm-01 --project=tony-korea-project --zone=asia-northeast3-a --machine-type=e2-small
+
+
+템플릿에서 생성
+
+gcloud compute instance-templates list	템플릿 확인
+
+gcloud compute instances create tony-vm-03 --source-instance-template=tony-web-template
+
+
+
+
+
+gcloud auth	
+
+
+
+1. VM 만들기 명령어
+
+gcloud compute instances create tony-vm-01 --project=tony-pro-347208 --zone=asia-northeast3-a --machine-type=e2-small
