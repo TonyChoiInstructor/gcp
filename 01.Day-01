@@ -96,7 +96,7 @@ OS 로그인
   시작 스크립트 관련 문서 (https://cloud.google.com/compute/docs/instances/startup-scripts/linux)
   
       yum -y install wget
-      wget https://raw.githubusercontent.com/TonyChoiInstructor/gcp/master/index.html
+      wget -P /var/www/html https://raw.githubusercontent.com/TonyChoiInstructor/gcp/master/index.html
       
   또는
       #!/bin/bash
