@@ -104,7 +104,7 @@ OS 로그인
       yum -y install unzip
       yum install -y httpd
       wget -P /var/www/html/ https://github.com/TonyChoiInstructor/gcp/raw/master/tony-web-follio.zip
-      unzip /var/www/html/Folio.zip -d /var/www/html/
+      unzip /var/www/html/tony-web-follio.zip -d /var/www/html/
       systemctl start httpd
       systemctl enable httpd
 
